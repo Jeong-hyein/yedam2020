@@ -1,24 +1,23 @@
 
 public class HelloWorld {
 	/*
-	 * ���� ������ �ּ�ó���� �� ����մϴ�.
-	 * �ۼ���: ������
+	 * 주석을 여러 주로 쓸수있다.
 	 */
-  public static void main(String[] args) {
-		// Hello World ����ϴ� ����, ctrl+/:�� �տ� �ּ��� ����
-	    // ctrl+shift+f:�ٸ���,ctrl+�����̽���:�ڵ��ϼ�
-	    int age = 26; //age�� ���� 10�� ��ڴ� , = : ������ ���� ���ʿ� �ְڴ�
-	    int year = 2020;
-	    //Sysout�ϰ� ��Ʈ�� �����̽����ϸ� System.out.println����
-	    // + : ����Ŭ�� concat���, �ι����� ����
-	    // ����: ctrl+f11
+	public static void main(String[] args) {
+		// Hello World ����ϴ� ����, ctrl+/:문장 제일 앞에 주석달기
+		// ctrl+shift+f: 줄맞춤,ctrl+ 스페이스바:자동완성
+		int age = 26; // age�� ���� 10�� ��ڴ� , = : ������ ���� ���ʿ� �ְڴ�
+		int year = 2020;
+		// Sysout에서 ctrl+스페이스바 -> System.out.println로 만들어줌
+		// + : 오라클 concat역할, 두 문장을 연결
+		// 실행: ctrl+f11
 		System.out.println("Hello, World!");
-		System.out.println("���ش�" + year);
+		System.out.println("올해는" + year);
 		System.out.println(year);
-		System.out.println(year + age); //���������� ���ϱ⸦ ��
-		System.out.println("���̴�" + age);
-		System.out.println("���ش� " + year+"��");
-		System.out.println("�� ���̴� " + age+ "�Դϴ�" );
+		System.out.println(year + age); // ���������� ���ϱ⸦ ��
+		System.out.println("내 나이는" + age);
+		System.out.println("올해는  " + year + "년");
+		System.out.println("내 나이는  " + age + "살");
 //		1월21일
 //		int 변수 타입, 170.03을 쓰면 빨간줄 -> 값을 바꾸던가 int를 바꾸라함
 		int height = 170;
@@ -39,26 +38,25 @@ public class HelloWorld {
 //		int가 표현가능한 수를 알려줌
 		System.out.println("int 최소값: " + Integer.MIN_VALUE);
 		System.out.println("int 최대값: " + Integer.MAX_VALUE);
-		//int sum = 0;
+		// int sum = 0;
 		int firstValue = 2000000000;
 		int secondValue = 1000000000;
 //		연산을 큰 타입에 맞춰서 연산
 //		int타입끼리 연산하면 연산을 int타입에 맞춰서 한더.
-		//sum = firstValue + secondValue;
+		// sum = firstValue + secondValue;
 //		-1294967296나옴, int가 표현할수있는 값을 넘음
 		long sum = 0;
-		sum = (long)firstValue + secondValue;
+		sum = (long) firstValue + secondValue;
 		System.out.println("두수의 합은: " + sum);
-		
+
 		int num1, num2, num3;
 //		초기화가 안되있어서 불가.
-		//int summary = num1 + num2;
-		num1 =10;
+		// int summary = num1 + num2;
+		num1 = 10;
 		num2 = 20;
 //		summary도 초기화를 해줘야하지만 변수 합으로 해도 된다.
 		int summary = num1 + num2;
 		System.out.println(summary);
-		
-		
-	  }
+
+	}
 }
