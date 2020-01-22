@@ -70,7 +70,9 @@ public class ForExample {
 		for (int i = 1; i <= 9; i++) {
 			System.out.println(var1+ "*" +i +"= " + (var1*i));
 		}
-		
+//		var1은 5로 지정, i는 1부터 9까지 for문 사용
+//		for문은 i는 1~9까지 sys를 한번씩 반복 출력 -> 출력은 9개 나옴
+//		sys안에는 변수랑 문자 지정 가능, 문자는 ""안에 적는다.
 
 	}// main
 }// class
