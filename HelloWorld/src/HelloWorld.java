@@ -1,20 +1,21 @@
 
 public class HelloWorld {
 	/*
-	 * 주석을 여러 주로 쓸수있다.
+	 * 주석을 여러 줄로 쓸수있다.
 	 */
 	public static void main(String[] args) {
-		// Hello World ����ϴ� ����, ctrl+/:문장 제일 앞에 주석달기
+		// ctrl+/:문장 제일 앞에 주석달기
 		// ctrl+shift+f: 줄맞춤,ctrl+ 스페이스바:자동완성
-		int age = 26; // age�� ���� 10�� ��ڴ� , = : ������ ���� ���ʿ� �ְڴ�
+		int age = 26; // age에 26을 담겠다는 것 , = : 변수에 값을 할당한다. 
 		int year = 2020;
 		// Sysout에서 ctrl+스페이스바 -> System.out.println로 만들어줌
 		// + : 오라클 concat역할, 두 문장을 연결
 		// 실행: ctrl+f11
+		//Hello World 출력하는 구문
 		System.out.println("Hello, World!");
 		System.out.println("올해는" + year);
 		System.out.println(year);
-		System.out.println(year + age); // ���������� ���ϱ⸦ ��
+		System.out.println(year + age); // 정수끼리 더하면 수가 나옴
 		System.out.println("내 나이는" + age);
 		System.out.println("올해는  " + year + "년");
 		System.out.println("내 나이는  " + age + "살");
