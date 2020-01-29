@@ -15,6 +15,7 @@ public class ForAndForExample {
 				System.out.print(j + "*"+ i + " = " + (j*i) + "    ");
 			} System.out.println();
 		}
+	
 
 		
 		

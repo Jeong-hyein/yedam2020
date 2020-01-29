@@ -2,7 +2,16 @@
 public class ArrayExample {
 	public static void main(String[] args) {
 		int[] intAry = { 2, 3, 4, 5 }; // 정수배열타입
-
+//		int intArray[] = { 1, 2, 3 };
+//		위 두 방식 다 사용가능하지만 첫번째 방식을 사용하자. 
+		int[] int2Ary = new int[5];
+		int2Ary[0] = 1;
+		int2Ary[4] = 10;
+//		int2Ary[5] = 10;  배열범위를 벗어난 에러
+//		int[] int3Ary = null; 
+//		int3Ary = new int[] {1,2,3}; 헷갈리니깐 두개는 안씀
+		
+		
 		System.out.println(intAry[0]); // 첫번째 위치의 값을 보여줌
 		System.out.println(intAry[1]);
 		System.out.println(intAry[2]);
