@@ -13,7 +13,7 @@ public class Exercise508 {
 //				cnt++;
 				}
 			}
-		}avg = (double) sum/cnt;
+		avg = (double) sum/cnt;
 		System.out.println(cnt);
 		System.out.println("sum: " + sum);
 		System.out.println("avg: " + avg);

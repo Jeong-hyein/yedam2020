@@ -42,17 +42,17 @@ public class ForWhileExample {
 		}
 	}
 //	야구게임
-	public static void method3() {
-		int[] intAry = new int[3];
-		Scanner scn = new Scanner(System.in);
-		int[] result = new int[3];
-		for(int i =0; i < intAry.length; i++) {
-			result[i] = (int) (Math.random()*10);
-			int num = scn.nextInt();
-			if (result[i] = )
+//	public static void method3() {
+//		int[] intAry = new int[3];
+//		Scanner scn = new Scanner(System.in);
+//		int[] result = new int[3];
+//		for(int i =0; i < intAry.length; i++) {
+//			result[i] = (int) (Math.random()*10);
+//			int num = scn.nextInt();
+//			if (result[i] = )
 		
-		}
 		
-	}
+		
+	
 
 }

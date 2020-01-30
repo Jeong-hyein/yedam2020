@@ -31,6 +31,7 @@ public class MethodExample {
 		n2 = b;
 		rslt = (n1 + n2) * 3;
 		System.out.println("결과값은: " + rslt);
+		}
 	// 메소드(method) 정의하는 부분
 	public static void multiAfterSum(int a , int b) {
 		int n1, n2, rslt;
@@ -40,4 +41,5 @@ public class MethodExample {
 		System.out.println("결과값은: " + rslt);
 	}//메소드
 
+	
 }//class

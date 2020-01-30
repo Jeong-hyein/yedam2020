@@ -7,7 +7,7 @@ public class StudentExample {
 		System.out.println(sn.age);
 		System.out.println(sn.height);
 		System.out.println(sn.weight);
-		
+//		-> private해놔서 안됨 빨간줄
 		
 //		instance만들기
 //		Student에 새로운 Student라는 instance(붕어빵)를 만들었다 -> 힙영역에다 만듬
