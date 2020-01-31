@@ -12,5 +12,10 @@ public class Singleton {
 		return s1;
 	}
 	
+	
+	int age;
+	
+	
+	
 }
 
