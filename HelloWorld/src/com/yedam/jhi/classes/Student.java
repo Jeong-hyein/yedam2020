@@ -70,6 +70,11 @@ public class Student {
 		return name;
 	}
 
+	@Override
+	public String toString() {
+		return "Student [name=" + name + ", age=" + age + ", height=" + height + ", weight=" + weight + "]";
+	}
+
 	public void setName(String name) {
 		this.name = name;
 	}
