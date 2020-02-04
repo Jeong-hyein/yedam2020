@@ -3,7 +3,7 @@ package com.yedam.jhi.interfaces.impl;
 import com.yedam.jhi.interfaces.model.EmpService;
 import com.yedam.jhi.interfaces.model.Employee;
 
-// 구현하는거
+// EmpService의 메소드(기능)을 구현하는 class: EmpServiceImpl, implements: 구현, extends:상속
 public class EmpServiceImpl implements EmpService {
 
 //source -> override

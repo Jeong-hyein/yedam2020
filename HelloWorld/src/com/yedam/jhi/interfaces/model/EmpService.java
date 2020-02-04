@@ -1,5 +1,6 @@
 package com.yedam.jhi.interfaces.model;
-//인터페이스, 기능정의
+//인터페이스, 기능(메소드)정의,인터페이스는 abstract(추상)을 안써줘도 추상메소드이다.
+//추상메소드는 {}가 없다. 
 public interface EmpService {
 //	저장기능
 	public void addEmp(Employee emp, Employee[] emps); //저장공간 Employee[]
