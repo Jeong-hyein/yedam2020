@@ -14,6 +14,18 @@ public interface EmpService {
 //	삭제
 	public void delEmp(int empNo, Employee[] emps);
 	
+//	default를 안하면 EmpService를 구현하는 클래스가 다 에러난다.
+//	추상 메소드가 아니다.
+//	default public void newMethod() {
+//		System.out.println("new Method");
+//	};
+	
+//	디비 연결 조회 기능
+	public void searchEmployees();
+	
+	public void insertEmployees(Employees emp);
+	
+	
 	
 	
 }

@@ -5,6 +5,7 @@ import com.yedam.jhi.interfaces.impl.EmpServiceImpl;
 import com.yedam.jhi.interfaces.impl.EmpServiceImpl2;
 import com.yedam.jhi.interfaces.model.EmpService;
 import com.yedam.jhi.interfaces.model.Employee;
+import com.yedam.jhi.interfaces.model.Employees;
 
 public class EmpProc {
 	Employee[] employees = new Employee[10];
@@ -19,9 +20,9 @@ public class EmpProc {
 	public void execute() {
 		System.out.println("프로그램 시작.");
 		while (true) {
-			System.out.println("=============================");
-			System.out.println("1.추가 2.조회 3.리스트 4.삭제 5.종료");
-			System.out.println("=============================");
+			System.out.println("=====================================");
+			System.out.println("1.추가 2.조회 3.리스트 4.삭제 5.종료 6.디비조회 7.디비입력");
+			System.out.println("=====================================");
 			System.out.print("선택> ");
 			int menu = scn.nextInt();
 			scn.nextLine();
@@ -50,9 +51,25 @@ public class EmpProc {
 				
 			} else if (menu == 5) {
 				break;
+			}  else if (menu == 6) {
+				service.searchEmployees();
+				
+			} else if (menu == 7) {
+				System.out.println("last 입력");
+				String lastName = scn.nextLine();
+				System.out.println("이메일 입력");
+				String email = scn.nextLine();
+				System.out.println("업무 입력");//IT_PROG
+				String jobId = scn.nextLine();
+				Employees emp = new Employees();
+				emp.setLastName(lastName);
+				emp.setEmail(email);
+				emp.setJobId(jobId);
+				
+				service.insertEmployees(emp);
 			}
 
 		} // while
 		System.out.println("프로그램 종료");
 	}// main
-}// class
+}
