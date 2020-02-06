@@ -8,7 +8,7 @@ public class WhileKeyControlExample {
 		int keyCode = 0;
 
 		while (run) { //keyCode에 엔터값을 가지고 있기때문에.
-			if (keyCode != 13 && keyCode != 10) { //엔터키값이 아니면
+			if (keyCode != 13 && keyCode != 10) { //엔터키값이 아니면, 초기값이 0
 				System.out.println("----------------");
 				System.out.println("1.증속 | 2.감속 | 3.중지");
 				System.out.println("----------------");
@@ -18,7 +18,7 @@ public class WhileKeyControlExample {
 //			키보드에 대한 값을 keyCode에 넣는다.
 			keyCode = System.in.read();
 //			키코드가 얼마의 값을 가지고 왔는지 보여줌
-			System.out.println(keyCode);
+//			System.out.println(keyCode);
 			
 			if (keyCode == 49) { //1의 keyCode는 49
 				speed += 10; //1씩 증가: speed++

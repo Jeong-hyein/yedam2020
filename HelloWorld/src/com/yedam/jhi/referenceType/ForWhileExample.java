@@ -26,10 +26,11 @@ public class ForWhileExample {
 		for (int i = 0; i < intAry2.length; i++) {
 			for (int j = 0; j < intAry2[i].length; j++) {
 				intAry2[i][j] = cnt++;
-
-			}
+				System.out.printf("%3d", intAry2[i][j]);
+			}System.out.println();
 
 		}
+		System.out.println("====================");
 		for (int i = 0; i < intAry2.length; i++) {
 			for (int j = 0; j < intAry2[i].length; j++) {
 //				System.out.print(intAry2[i][j] + " ");

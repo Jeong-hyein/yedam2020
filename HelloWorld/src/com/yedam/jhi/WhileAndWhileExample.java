@@ -31,6 +31,15 @@ public class WhileAndWhileExample {
 			i++;
 
 		}
+		
+//		while (i < 10) {
+//			int j = 9;
+//			while (1 < j) {
+//				System.out.print(j + "*" + i + "= " + (i * j) + "   ");
+//				j--;
+//			}System.out.println();
+//			i++;
+//		}
 
 	}// main
 }
