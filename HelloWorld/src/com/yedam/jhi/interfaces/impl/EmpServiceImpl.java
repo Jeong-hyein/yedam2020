@@ -1,5 +1,7 @@
 package com.yedam.jhi.interfaces.impl;
 
+import java.util.List;
+
 import com.yedam.jhi.interfaces.model.EmpService;
 import com.yedam.jhi.interfaces.model.Employee;
 import com.yedam.jhi.interfaces.model.Employees;
@@ -75,4 +77,36 @@ public class EmpServiceImpl implements EmpService {
 		dao.insertEmployees(emp);
 	}
 
+	@Override
+	public List<Employees> getDBEmployees() {
+		EmpDAO dao = new EmpDAO();
+//		List<Employees> list = dao.getEmpList();
+//		return list;
+		return dao.getEmpList(); // 위의 두줄의 다른 방법.
+	}
+
+	@Override
+	public Employees getDBEmployee(int empId) {
+		EmpDAO dao = new EmpDAO();
+		return dao.getEmployee(empId);
+	}
+	
+
+	@Override
+	public void insertDBEmp(Employees emp) {
+		EmpDAO dao = new EmpDAO();
+		dao.insertEmployees(emp);
+	}
+	
+
+	@Override
+	public void updateDBEmp(Employees emp) {
+		EmpDAO dao = new EmpDAO();
+		dao.updateEmployees(emp);
+	}
+
+	public void deleteDBEmp(Employees emp) {
+		EmpDAO dao = new EmpDAO();
+		dao.deleteEmployees(emp);
+	}
 }

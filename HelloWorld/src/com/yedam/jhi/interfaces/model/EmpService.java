@@ -1,4 +1,7 @@
 package com.yedam.jhi.interfaces.model;
+
+import java.util.List;
+
 //인터페이스, 기능(메소드)정의,인터페이스는 abstract(추상)을 안써줘도 추상메소드이다.
 //추상메소드는 {}가 없다. 
 public interface EmpService {
@@ -22,10 +25,23 @@ public interface EmpService {
 	
 //	디비 연결 조회 기능
 	public void searchEmployees();
-	
+
+//	디비 입력 기능
 	public void insertEmployees(Employees emp);
 	
+// 	->  collection 디비 처리
+//	1. 전체데이터 조회
+	public List<Employees>  getDBEmployees();
 	
+//	2. 한건 조회
+	public Employees getDBEmployee(int empId);
 	
+//	3. 입력
+	public void insertDBEmp(Employees emp);
 	
+//	4. 수정
+	public void updateDBEmp(Employees emp);
+	
+//	5. 삭제
+	public void deleteDBEmp(Employees emp);
 }
